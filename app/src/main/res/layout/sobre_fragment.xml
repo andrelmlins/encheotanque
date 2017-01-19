@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:background="#FFB74d">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:src="@drawable/logo"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="      O Enche o Tanque é uma ferramenta criada para auxiliar você na hora de abastecer o seu veiculo, aqui tem todas as informações de todos os veículos que rodam no território brasileiro, com características de consumo para cada modelo, todos com suas particularidades."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="     Além disso, o Enche o Tanque vai sempre atualizar você do preço do combustível de todos os postos do país que estão cadastrados na ANP, agência nacional do petróleo. Com isso o usuário pode pesquisar o melhor local para abastecer e saberá o preço antes de sair de casa. Não precisa mais rodar para achar um posto de combustível com o melhor preço da região, agora o Enche o Tanque faz isso pra você!"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="     A Universe Developer é a empresa responsável pelo desenvolvimento do Enche o Tanque, uma iniciativa recente e inovadora, que tem como principal objetivo aproximar as pessoas dos recursos tecnológicos disponíveis."/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_weight="0.3"
+                    android:padding="16dp"
+                    android:src="@drawable/logo1"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_weight="0.3"
+                    android:padding="16dp"
+                    android:src="@drawable/logo2"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:padding="16dp"
+                    android:layout_weight="0.3"
+                    android:src="@drawable/logo3"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

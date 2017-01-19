@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e65100</color>
+    <color name="colorPrimaryDark">#bf4300</color>
+    <color name="colorAccent">#e65100</color>
+    <color name="colorTwo">#3f51b5</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="divider">#CCC</color>
+    <color name="subtitle">#666</color>
+    <color name="facebook">#3b5998</color>
+</resources>

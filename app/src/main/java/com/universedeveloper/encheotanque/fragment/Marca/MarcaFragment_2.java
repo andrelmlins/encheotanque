@@ -57,7 +57,7 @@ public class MarcaFragment_2 extends Fragment implements Response.Listener<JSONO
         this.listView.setOnItemClickListener(this);
         Requests r = Requests.getInstance(getActivity());
         try {
-            r.getObject("http://apifuel.universedeveloper.com/carropormarca.php?marca="+URLEncoder.encode(getArguments().getString("marca"), "UTF-8"),this,this);
+            r.getObject(Requests.ROOT+"/carropormarca.php?marca="+URLEncoder.encode(getArguments().getString("marca"), "UTF-8"),this,this);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }

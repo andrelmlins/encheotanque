@@ -49,7 +49,7 @@ public class CarrosFragment extends Fragment implements Response.Listener<JSONOb
         listView = (ListView) rootView.findViewById(R.id.list);
         listView.setOnItemClickListener(this);
         Requests r = Requests.getInstance(getActivity());
-        r.getObject("http://apifuel.universedeveloper.com/carros.php",this,this);
+        r.getObject(Requests.ROOT+"/carros.php",this,this);
         return rootView;
     }
 

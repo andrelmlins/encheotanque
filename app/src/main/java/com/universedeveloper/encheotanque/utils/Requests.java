@@ -17,7 +17,7 @@ import org.json.JSONObject;
 public class Requests {
     private static Requests mInstance;
     private RequestQueue mQueue;
-    public static final String ROOT = "http://apifuel.universedeveloper.com/";
+    public static final String ROOT = "http://olhoneles.esy.es/fuel/";
 
     private Requests(Context context) {
         mQueue = Volley.newRequestQueue(context);

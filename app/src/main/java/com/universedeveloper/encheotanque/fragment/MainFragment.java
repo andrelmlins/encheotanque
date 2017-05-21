@@ -101,7 +101,7 @@ public class MainFragment extends Fragment implements Action1<Location>, OnMapRe
             double latitude = this.location.getLatitude();
             double longitude = this.location.getLongitude();
             this.myPosition = new LatLng(latitude, longitude);
-            this.request.getObject("http://apifuel.universedeveloper.com/route.php?distance=20&latitude="+latitude+"&longitude="+longitude,this,this);
+            this.request.getObject(Requests.ROOT+"/route.php?distance=20&latitude="+latitude+"&longitude="+longitude,this,this);
             this.googleMap = googleMap;
             this.googleMap.setOnMarkerClickListener(this);
             googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(this.myPosition, 14));
@@ -153,7 +153,6 @@ public class MainFragment extends Fragment implements Action1<Location>, OnMapRe
         Route route = direction.getRouteList().get(0);
         Leg leg = route.getLegList().get(0);
         ArrayList<LatLng> directionPositionList = leg.getDirectionPoint();
-        Toast.makeText(getActivity(), "Pontos:" + directionPositionList.size(), Toast.LENGTH_SHORT).show();
         PolylineOptions polylineOptions = DirectionConverter.createPolyline(this.getActivity().getApplicationContext(), directionPositionList, 5, Color.RED);
         this.googleMap.addPolyline(polylineOptions);
     }
@@ -166,8 +165,6 @@ public class MainFragment extends Fragment implements Action1<Location>, OnMapRe
     @Override
     public void onErrorResponse(VolleyError volleyError) {
         if(this.progress!=null) this.progress.dismiss();
-        Toast.makeText(getActivity(), volleyError.toString(),
-                Toast.LENGTH_SHORT).show();
     }
 
     @Override

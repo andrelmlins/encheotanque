@@ -53,7 +53,7 @@ public class EstadoFragment_1 extends Fragment implements Response.Listener<JSON
         this.rootView = inflater.inflate(R.layout.estado_fragment_1, container, false);
         this.progress = ProgressDialog.show(getActivity(), "","Carregando detalhes do estado...", true);
         Requests r = Requests.getInstance(getActivity());
-        r.getObject("http://apifuel.universedeveloper.com/estado.php?estado="+getArguments().getString("estado"),this,this);
+        r.getObject(Requests.ROOT+"/estado.php?estado="+getArguments().getString("estado"),this,this);
         return this.rootView;
     }
 

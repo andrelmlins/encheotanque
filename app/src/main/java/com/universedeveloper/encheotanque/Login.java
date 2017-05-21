@@ -84,7 +84,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener, Fa
 
     @Override
     public void onError(FacebookException error) {
-        Toast.makeText(this, error.toString(), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, error.toString(), Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -110,7 +110,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener, Fa
             startActivity(intent);
             finish();
         } catch (JSONException e) {
-            Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
             e.printStackTrace();
         }
     }
@@ -118,7 +118,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener, Fa
     @Override
     public void onErrorResponse(VolleyError error) {
         if(this.progress!=null)this.progress.dismiss();
-        Toast.makeText(this, error.toString(), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, error.toString(), Toast.LENGTH_SHORT).show();
     }
 
     @Override

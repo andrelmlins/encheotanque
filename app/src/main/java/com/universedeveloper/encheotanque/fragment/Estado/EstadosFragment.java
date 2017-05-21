@@ -51,7 +51,7 @@ public class EstadosFragment extends Fragment implements Response.Listener<JSONO
         listView.setOnItemClickListener(this);
         listView.setOnScrollListener(this);
         Requests r = Requests.getInstance(getActivity());
-        r.getObject("http://apifuel.universedeveloper.com/estados.php", this, this);
+        r.getObject(Requests.ROOT+"/estados.php", this, this);
         return rootView;
     }
 

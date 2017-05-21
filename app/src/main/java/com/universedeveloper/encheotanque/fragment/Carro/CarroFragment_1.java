@@ -55,7 +55,7 @@ public class CarroFragment_1 extends Fragment implements Response.Listener<JSONO
         this.progress = ProgressDialog.show(getActivity(), "","Carregando detalhes do carro...", true);
         Requests r = Requests.getInstance(getActivity());
         try {
-            r.getObject("http://apifuel.universedeveloper.com/carro.php?carro="+ URLEncoder.encode(getArguments().getString("carro"), "UTF-8"),this,this);
+            r.getObject(Requests.ROOT+"/carro.php?carro="+ URLEncoder.encode(getArguments().getString("carro"), "UTF-8"),this,this);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }

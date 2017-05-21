@@ -57,7 +57,7 @@ public class BandeiraFragment_2 extends Fragment implements Response.Listener<JS
         this.listView.setOnItemClickListener(this);
         Requests r = Requests.getInstance(getActivity());
         try {
-            r.getObject("http://apifuel.universedeveloper.com/estadoporbandeira.php?combustivel=gasolina&bandeira="+ URLEncoder.encode(getArguments().getString("bandeira"), "UTF-8"),this,this);
+            r.getObject(Requests.ROOT+"/estadoporbandeira.php?combustivel=gasolina&bandeira="+ URLEncoder.encode(getArguments().getString("bandeira"), "UTF-8"),this,this);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }

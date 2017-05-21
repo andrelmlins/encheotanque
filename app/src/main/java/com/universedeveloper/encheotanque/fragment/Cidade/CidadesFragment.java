@@ -49,7 +49,7 @@ public class CidadesFragment extends Fragment implements Response.Listener<JSONO
         listView = (ListView) rootView.findViewById(R.id.list);
         listView.setOnItemClickListener(this);
         Requests r = Requests.getInstance(getActivity());
-        r.getObject("http://apifuel.universedeveloper.com/cidades.php",this,this);
+        r.getObject(Requests.ROOT+"/cidades.php",this,this);
         return rootView;
     }
 

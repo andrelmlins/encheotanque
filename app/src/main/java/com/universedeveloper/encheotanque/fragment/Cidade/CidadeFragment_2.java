@@ -120,7 +120,7 @@ public class CidadeFragment_2 extends Fragment implements Response.Listener<JSON
         if(result.equals("Gás Natural")) result = "GNV";
         else if(result.equals("Diesel S10")) result="Diesel+S10";
         try {
-            this.r.getObject("http://apifuel.universedeveloper.com/postoporcidade.php?combustivel="+result+"&estado="+getArguments().getString("estado")+"&cidade="+ URLEncoder.encode(getArguments().getString("cidade"), "UTF-8"),this,this);
+            this.r.getObject(Requests.ROOT+"/postoporcidade.php?combustivel="+result+"&estado="+getArguments().getString("estado")+"&cidade="+ URLEncoder.encode(getArguments().getString("cidade"), "UTF-8"),this,this);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }

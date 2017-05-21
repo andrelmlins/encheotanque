@@ -57,7 +57,7 @@ public class CidadeFragment_1 extends Fragment implements Response.Listener<JSON
         this.progress = ProgressDialog.show(getActivity(), "","Carregando detalhes da cidade...", true);
         Requests r = Requests.getInstance(getActivity());
         try {
-            r.getObject("http://apifuel.universedeveloper.com/cidade.php?estado="+getArguments().getString("estado")+"&cidade="+ URLEncoder.encode(getArguments().getString("cidade"), "UTF-8"),this,this);
+            r.getObject(Requests.ROOT+"/cidade.php?estado="+getArguments().getString("estado")+"&cidade="+ URLEncoder.encode(getArguments().getString("cidade"), "UTF-8"),this,this);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }

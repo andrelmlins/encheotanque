@@ -116,7 +116,7 @@ public class EstadoFragment_3 extends Fragment implements Response.Listener<JSON
         String result = parent.getItemAtPosition(position).toString();
         if(result.equals("Gás Natural")) result = "GNV";
         else if(result.equals("Diesel S10")) result="Diesel+S10";
-        this.r.getObject("http://apifuel.universedeveloper.com/postoporestado.php?combustivel="+result+"&estado="+getArguments().getString("estado"),this,this);
+        this.r.getObject(Requests.ROOT+"/postoporestado.php?combustivel="+result+"&estado="+getArguments().getString("estado"),this,this);
     }
 
     @Override

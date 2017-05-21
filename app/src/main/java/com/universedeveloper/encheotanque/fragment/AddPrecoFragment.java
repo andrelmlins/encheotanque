@@ -72,7 +72,7 @@ public class AddPrecoFragment extends Fragment implements AdapterView.OnClickLis
             json.put("gnv",gnv.getText());
             json.put("usuario",preferences.getString("id",""));
             json.put("posto",this.posto);
-            r.post("http://apifuel.universedeveloper.com/adicionarprecoposto.php",json,this,this);
+            r.post(Requests.ROOT+"/adicionarprecoposto.php",json,this,this);
         } catch (JSONException e) {
             e.printStackTrace();
         }

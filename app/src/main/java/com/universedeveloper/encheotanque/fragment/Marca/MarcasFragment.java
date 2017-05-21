@@ -49,7 +49,7 @@ public class MarcasFragment extends Fragment implements Response.Listener<JSONOb
         listView = (ListView) rootView.findViewById(R.id.list);
         listView.setOnItemClickListener(this);
         Requests r = Requests.getInstance(getActivity());
-        r.getObject("http://apifuel.universedeveloper.com/marcas.php",this,this);
+        r.getObject(Requests.ROOT+"/marcas.php",this,this);
         return rootView;
     }
 

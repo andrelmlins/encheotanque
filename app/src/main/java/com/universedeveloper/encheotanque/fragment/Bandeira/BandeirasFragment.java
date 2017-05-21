@@ -49,7 +49,7 @@ public class BandeirasFragment extends Fragment implements Response.Listener<JSO
         this.listView = (ListView) rootView.findViewById(R.id.list);
         this.listView.setOnItemClickListener(this);
         Requests r = Requests.getInstance(getActivity());
-        r.getObject("http://apifuel.universedeveloper.com/bandeiras.php",this,this);
+        r.getObject(Requests.ROOT+"/bandeiras.php",this,this);
         return rootView;
     }
 

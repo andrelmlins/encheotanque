@@ -96,7 +96,7 @@ public class PostoFragment extends Fragment implements Response.Listener<JSONObj
         p = Preferencias.getInstance(this.getActivity());
         favorito = new Favorito("posto",posto," ");
         this.r = Requests.getInstance(getActivity());
-        this.r.getObject("http://apifuel.universedeveloper.com/posto.php?hash="+posto,this,this);
+        this.r.getObject(Requests.ROOT+"/posto.php?hash="+posto,this,this);
         return rootView;
     }
 

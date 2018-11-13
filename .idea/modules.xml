@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/EncheoTanque.iml" filepath="$PROJECT_DIR$/EncheoTanque.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/encheotanqueandroid.iml" filepath="$PROJECT_DIR$/encheotanqueandroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/encheotanque.iml" filepath="$PROJECT_DIR$/encheotanque.iml" />
     </modules>
   </component>
 </project>

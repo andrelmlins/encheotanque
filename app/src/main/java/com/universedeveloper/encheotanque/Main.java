@@ -56,12 +56,12 @@ public class Main extends AppCompatActivity
         TextView email = (TextView) header.findViewById(R.id.email);
         ImageView picture = (ImageView) header.findViewById(R.id.foto);
 
-        SharedPreferences preferences = getSharedPreferences("usuario", 0);
-        if(!preferences.getString("nome", "").equals("")){
-            name.setText(preferences.getString("nome", ""));
-            email.setText(preferences.getString("email", ""));
-            Picasso.with(this).load(preferences.getString("foto", "")).into(picture);
-        }
+//        SharedPreferences preferences = getSharedPreferences("usuario", 0);
+//        if(!preferences.getString("nome", "").equals("")){
+//            name.setText(preferences.getString("nome", ""));
+//            email.setText(preferences.getString("email", ""));
+//            Picasso.with(this).load(preferences.getString("foto", "")).into(picture);
+//        }
 
         FragmentManager fm = getSupportFragmentManager();
         fm.beginTransaction().replace(R.id.content_fragment, new MainFragment()).commit();
